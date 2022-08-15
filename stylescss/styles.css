@@ -25,13 +25,6 @@ nav{
     display: inline-block;
 }
 
-.toggle{
-    color: #be9e8f;
-    background: none;
-    border: none;
-    font-size: 30px;
-    display: none;
-}
 nav ul li a {
     text-decoration: none;
     font-size: 1.3rem;
