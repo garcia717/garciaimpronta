@@ -13,26 +13,18 @@
     background-color: #2f6364;
 }
 .logo{
-    width: 15%;
+    width: 20%;
     display: inline-block;
-    margin-top: 1rem;
 }
 body{
     background-color: #fad7d7;
+    background-image: linear-gradient(to left, #fad7d7,  #bca1a1);
 }
 nav{
-    width: 70%;
-    display: inline-block;
-    margin-left: 10rem;
-}
-.navegacion{
-    display: inline-block;
-    text-decoration: none;
-    margin-bottom: 1rem;
-}
-.navegacion li{
+    width: 100%;
     display: inline-block;
 }
+
 .toggle{
     color: #be9e8f;
     background: none;
@@ -46,16 +38,9 @@ nav ul li a {
     font-weight: bold;
     color: #be9e8f;
     margin: 10px;
-    padding: 5px;
-      
+    padding: 5px;     
 }
-#li{
-    border-radius: 3px;
-}
-#li:hover{
-    background-color: #181b1b;
-    transition: 0.5s;
-}
+
 .pieDePagina{
     background-color: #2f6364;
     display: flex;
@@ -144,7 +129,7 @@ div#entrevista{
 @media (max-width:768px){
 .encabezado{
     background-color: #2f6364;
-    height: 64px;
+    height: 70px;
     position: fixed;
     top: 0;
     left: 0;
