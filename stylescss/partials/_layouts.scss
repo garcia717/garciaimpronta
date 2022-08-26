@@ -1,0 +1,35 @@
+.principal{
+    display: grid;
+    grid-template-areas: 
+    "articuloseccion1 articuloseccion1 editorial"
+    "entrevista articuloseccion2 editorial"
+    "entrevista articuloseccion3 articuloseccion4";
+    grid-row-gap: 20PX;
+    grid-column-gap: 20px;
+    width: 98%;
+}
+div#editorial{
+    grid-area: editorial;
+}
+div#articuloseccion1{
+    grid-area: articuloseccion1;
+}
+div#entrevista{
+    grid-area: entrevista;
+}
+div#articuloseccion2{
+    grid-area: articuloseccion2;
+}
+div#articuloseccion3{
+    grid-area: articuloseccion3;
+}
+div#articuloseccion4{
+    grid-area: articuloseccion4;
+}
+.secciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 1rem;
+    width: 98%;
+}
