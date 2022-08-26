@@ -66,12 +66,10 @@ nav {
   text-align: justify;
   width: 70%;
   word-wrap: break-word;
-}
-
-.nav-link a {
-  padding: 10px;
-  font-size: x-large;
   font-weight: bolder;
+}
+.nav-link:hover {
+  transform: translateY(-5px);
 }
 
 .pieDePagina {
@@ -160,7 +158,6 @@ div#entrevista {
   transition: 0.2s;
   color: #000000;
 }
-
 .tarjeta:hover {
   transform: translateY(-15px);
   box-shadow: 0 12 px 16px rgba(0, 0, 0, 0.2);
@@ -176,7 +173,6 @@ div#entrevista {
   text-align: center;
   transition: 0.2s;
 }
-
 .tarjeta2:hover {
   transform: translateY(-15px);
   box-shadow: 0 12 px 16px rgba(0, 0, 0, 0.2);

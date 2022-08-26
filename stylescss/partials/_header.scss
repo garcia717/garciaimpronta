@@ -20,9 +20,8 @@ nav{
     text-align: justify;
     width: 70%;
     word-wrap: break-word;
-}
-.nav-link a{
-    padding: 10px;
-    font-size: x-large;
     font-weight: bolder;
+    &:hover{
+        transform: translateY(-5px);
+    }
 }
