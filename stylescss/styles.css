@@ -1,14 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-* {
-  margin: 0;
-  padding: 0;
-  font-family: raleway;
-}
-
-@font-face {
-  font-family: raleway;
-  src: url(../fuentes/ralewayvariableFontwght.ttf);
-}
 .principal {
   display: grid;
   grid-template-areas: "articuloseccion1 articuloseccion1 editorial" "entrevista articuloseccion2 editorial" "entrevista articuloseccion3 articuloseccion4";
@@ -41,13 +31,17 @@ div#articuloseccion4 {
   grid-area: articuloseccion4;
 }
 
-.logo {
-  width: 50%;
+.secciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  width: 98%;
 }
 
-body {
-  background-color: #fad7d7;
-  background-image: linear-gradient(to left, #fad7d7, #bca1a1);
+.logo {
+  width: 50%;
 }
 
 nav {
@@ -83,12 +77,28 @@ nav {
 .pieDePagina {
   background-color: #2f6364;
   display: flex;
+  display: grid;
   width: 100%;
   height: 100%;
   align-items: center;
   text-align: center;
 }
-
+.pieDePagina p {
+  size: 30%;
+  flex-direction: column;
+  display: inline;
+  text-align: center;
+  font-weight: bold;
+}
+.pieDePagina ul li {
+  display: inline-flex;
+  text-decoration: none;
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.pieDePagina ul li:hover {
+  transform: translateY(-5px);
+}
 .pieDePagina ul li a {
   size: 70%;
   text-decoration: none;
@@ -98,31 +108,23 @@ nav {
   padding: 5px;
   transition: 0.2s;
 }
-
-.pieDePagina ul li {
-  display: inline-flex;
-  text-decoration: none;
-  margin-left: 1rem;
-  transition: 0.2s;
-}
-
-.pieDePagina p {
-  size: 30%;
-  flex-direction: column;
-  display: inline;
-  text-align: center;
-}
-
-.pieDePagina {
-  display: grid;
-}
-
-.pieDePagina ul li:hover {
-  transform: translateY(-5px);
-}
-
 .pieDePagina ul li a:hover {
   color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: raleway;
+}
+
+@font-face {
+  font-family: raleway;
+  src: url(../fuentes/ralewayvariableFontwght.ttf);
+}
+body {
+  background-color: #fad7d7;
+  background-image: linear-gradient(to left, #fad7d7, #bca1a1);
 }
 
 div#articuloseccion1 {
@@ -341,5 +343,56 @@ article h1 {
   .tienda {
     height: 100%;
     padding: 100px;
+  }
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98%;
+  align-self: center;
+  align-items: center;
+  padding: 20px 20px;
+  text-align: justify;
+}
+
+article ol li {
+  padding: 5px 5px;
+  margin-right: 500px;
+}
+
+@media (max-width: 768px) {
+  .secciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    grid-row-gap: 40px;
+    margin-top: 80px;
+  }
+  .tarjeta2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: 0.2s;
+    color: #000000;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    align-self: center;
+    align-items: center;
+    padding: 20px 20px;
+    text-align: justify;
+    margin-right: 10px;
+  }
+  article ol li {
+    padding: 5px 5px;
+    margin-right: 60px;
   }
 }/*# sourceMappingURL=styles.css.map */

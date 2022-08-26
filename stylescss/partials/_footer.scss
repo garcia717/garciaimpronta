@@ -1,0 +1,39 @@
+.pieDePagina{
+    background-color: $primaryColor;
+    display: flex;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    p{
+        size: 30%;
+        flex-direction: column;
+        display: inline;
+        text-align: center;
+        font-weight: bold;
+    }
+    ul{
+        li{
+            display: inline-flex;
+            text-decoration: none;
+            margin-left: 1rem;
+            transition: 0.2s;
+            &:hover{
+                transform: translateY(-5px);
+            }
+            a{
+                size: 70%;
+                text-decoration: none;
+                font-size: 1.3rem;
+                font-weight: bold;
+                color: #be9e8f;
+                padding: 5px;
+                transition: 0.2s;
+                &:hover{
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
