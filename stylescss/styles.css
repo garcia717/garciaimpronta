@@ -58,18 +58,20 @@ nav {
 }
 
 .nav-link {
+  display: flex;
+  display: grid;
+  align-self: stretch;
+  align-content: space-between;
   color: #be9e8f;
   font-size: 1.3rem;
-  font: bolder;
   padding: 8px;
   background-color: #2f6364;
-  text-align: justify;
   width: 70%;
-  word-wrap: break-word;
   font-weight: bolder;
 }
 .nav-link:hover {
   transform: translateY(-5px);
+  color: #ffffff;
 }
 
 .pieDePagina {
@@ -101,13 +103,13 @@ nav {
   size: 70%;
   text-decoration: none;
   font-size: 1.3rem;
-  font-weight: bold;
   color: #be9e8f;
   padding: 5px;
   transition: 0.2s;
+  font-weight: bolder;
 }
 .pieDePagina ul li a:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 * {
