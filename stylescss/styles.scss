@@ -1,6 +1,8 @@
-@import "../stylescss/partials/_variables.scss";
-@import "../stylescss/partials/_layouts.scss";
-@import "../stylescss/partials/_header.scss";
-@import "../stylescss/partials/_footer.scss";
-@import "../stylescss/partials/_main.scss";
-@import "../stylescss/partials/_responsive.scss"; 
+@import "../stylescss/partials/variables";
+@import "../stylescss/partials/extends";
+@import "../stylescss/partials/mixins";
+@import "../stylescss/partials/layouts";
+@import "../stylescss/partials/header";
+@import "../stylescss/partials/footer";
+@import "../stylescss/partials/main";
+@import "../stylescss/partials/responsive"; 

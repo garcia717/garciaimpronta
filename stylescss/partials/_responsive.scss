@@ -1,4 +1,7 @@
 @media (max-width:768px){
+    .btnSub{
+        @extend %botonBase;
+    }
     .principal{
         display: grid;
         grid-template-areas: 

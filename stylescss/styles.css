@@ -1,4 +1,17 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+.btnSub {
+  padding: 5px;
+  border-top: none;
+  border-left: none;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: #2f6364;
+  color: #be9e8f;
+  font-weight: bolder;
+}
+
 .principal {
   display: grid;
   grid-template-areas: "articuloseccion1 articuloseccion1 editorial" "entrevista articuloseccion2 editorial" "entrevista articuloseccion3 articuloseccion4";
@@ -158,7 +171,7 @@ div#entrevista {
   margin: 20px;
   text-align: center;
   transition: 0.2s;
-  color: #000000;
+  background-color: #bca1a1;
 }
 .tarjeta:hover {
   transform: translateY(-15px);
@@ -174,6 +187,7 @@ div#entrevista {
   margin: 20px;
   text-align: center;
   transition: 0.2s;
+  background-color: false;
 }
 .tarjeta2:hover {
   transform: translateY(-15px);
