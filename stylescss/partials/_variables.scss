@@ -1,2 +1,12 @@
 $primaryColor: #2f6364;
 $mainTextColor: #be9e8f;
+$headAndTitleF: raleway;
+$bodyFont: gabriela;
+
+
+@font-face {
+    font-family: raleway;
+    src: url(../fuentes/ralewayvariableFontwght.ttf);
+    font-family: gabriela;
+    src: url(../fuentes/Gabriela-Regular.ttf);
+}
