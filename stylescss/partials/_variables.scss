@@ -5,8 +5,10 @@ $bodyFont: gabriela;
 
 
 @font-face {
-    font-family: raleway;
-    src: url(../fuentes/ralewayvariableFontwght.ttf);
     font-family: gabriela;
     src: url(../fuentes/Gabriela-Regular.ttf);
+}
+@font-face {
+    font-family: raleway;
+    src: url(../../fuentes/ralewayvariableFontwght.ttf);
 }

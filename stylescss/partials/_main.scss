@@ -18,12 +18,24 @@ div#editorial{
     flex-direction: column;
     height: 95.9%;
     align-items: center;
+    img{
+        border-radius: 200px;
+    }
+    p{
+        margin: 5px;
+    }
 }
 div#entrevista{
     display: flex;
     flex-direction: column;
     height: 95.9%;
     align-items: center;
+}
+div#articuloseccion3{
+    h1{
+       font-size: larger;
+       font-weight: bold;
+    }
 }
 .btnSub{
     @extend %botonBase;
@@ -32,7 +44,10 @@ div#entrevista{
     @include cards($bgColor: #bca1a1)
 }
 .tarjeta2{
-    @include cards($bgColor:false)
+    @include cards($bgColor:false);
+    h1{
+        font-size: x-small;
+    }
 }
 article h1{
     margin-top: 10px;
@@ -58,5 +73,27 @@ article h1{
     padding: map-get($map: $estilos, $key:paddingXl );
     h1{
         color: map-get($map: $estilos, $key:colorTitle );
+    }
+}
+.artsMain{
+    margin: 20px;
+    font-family: $headAndTitleF;
+    time{
+        background-color: $primaryColor;
+        color: $mainTextColor;
+        padding: 5px;
+        margin-bottom: 30px;
+    }
+    h1{
+        margin-top: 10px;
+    }
+    .artBody{
+        font-size: larger;
+        text-align: justify;
+        margin-right: auto;
+        img{
+            margin-left: 20px;
+            float: right;
+        }
     }
 }
