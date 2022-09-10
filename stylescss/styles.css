@@ -20,6 +20,14 @@
   font-weight: bolder;
 }
 
+.quotes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #febdbd;
+  border-left: #bca1a1 4px groove;
+}
+
 .principal {
   display: grid;
   grid-template-areas: "articuloseccion1 articuloseccion1 editorial" "entrevista articuloseccion2 editorial" "entrevista articuloseccion3 articuloseccion4";
@@ -297,6 +305,9 @@ article h1 {
 }
 
 @media (max-width: 768px) {
+  .btnSub {
+    margin-top: 140px;
+  }
   .principal {
     display: grid;
     grid-template-areas: "editorial" "entrevista" "articuloseccion1" "articuloseccion2" "articuloseccion3" "articuloseccion4";
@@ -325,6 +336,7 @@ article h1 {
   }
   div#articuloseccion1 {
     align-items: center;
+    width: 95%;
   }
   .encabezado {
     background-color: #2f6364;
@@ -363,6 +375,20 @@ article h1 {
     height: max-content;
   }
   .tarjeta {
+    width: 95%;
+    height: 95%;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: 0.2s;
+    color: #000000;
+  }
+  .tarjeta:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12 px 16px rgba(0, 0, 0, 0.2);
+  }
+  .tarjeta2 {
     width: 95%;
     height: 95%;
     border-radius: 8px;
@@ -458,5 +484,31 @@ article ol li {
   article ol li {
     padding: 5px 5px;
     margin-right: 60px;
+  }
+  .artsMain {
+    margin-top: 125px;
+    font-family: raleway;
+  }
+  .artsMain time {
+    background-color: #2f6364;
+    color: #be9e8f;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .artsMain h1 {
+    margin-top: 10px;
+  }
+  .artsMain .artBody {
+    font-size: larger;
+    text-align: justify;
+    margin-right: auto;
+  }
+  .artsMain .artBody img {
+    width: 100%;
+    margin-left: 60px;
+  }
+  .contact {
+    margin-top: 100px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -10,3 +10,10 @@
     color: $mainTextColor;
     font-weight: bolder;
 }
+%quotationsGen{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color:  #febdbd;
+    border-left: #bca1a1 4px groove;
+}

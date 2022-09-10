@@ -97,3 +97,6 @@ article h1{
         }
     }
 }
+.quotes{
+    @extend %quotationsGen;
+}
