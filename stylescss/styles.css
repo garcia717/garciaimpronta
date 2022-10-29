@@ -178,8 +178,10 @@ div#editorial {
   flex-direction: column;
   height: 95.9%;
   align-items: center;
+  flex: flex-grow;
 }
 div#editorial img {
+  margin: 16px;
   border-radius: 200px;
 }
 div#editorial p {
@@ -257,6 +259,22 @@ article h1 {
 .contact h1 {
   color: #1e7b7b;
 }
+.contact form {
+  font-family: raleway;
+}
+.contact form fieldset input {
+  border-radius: 8px;
+  width: 25%;
+  height: 34px;
+}
+.contact form fieldset label {
+  margin: 16px;
+}
+.contact form fieldset div textarea {
+  border-radius: 8px;
+  width: 25%;
+  height: auto;
+}
 
 .artsMain {
   margin: 20px;
@@ -287,17 +305,17 @@ article h1 {
   }
   .principal {
     display: grid;
-    grid-template-areas: "editorial" "entrevista" "articuloseccion1" "articuloseccion2" "articuloseccion3" "articuloseccion4";
+    grid-template-areas: "editorial" "articuloseccion1" "entrevista" "articuloseccion2" "articuloseccion3" "articuloseccion4";
     grid-row-gap: 20PX;
     grid-column-gap: 20px;
     width: 95%;
-    margin-top: 80px;
   }
   div#editorial {
     grid-area: editorial;
   }
   div#articuloseccion1 {
     grid-area: articuloseccion1;
+    flex-direction: column;
   }
   div#entrevista {
     grid-area: entrevista;
@@ -317,10 +335,7 @@ article h1 {
   }
   .encabezado {
     background-color: #2f6364;
-    height: 80px;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -328,8 +343,6 @@ article h1 {
   .logo {
     width: 150px;
     background-color: #2f6364;
-    padding-left: 0;
-    padding-right: 20px;
   }
   .navegacion {
     display: flex;
@@ -337,19 +350,12 @@ article h1 {
     width: 100%;
     padding: 10%;
     background-color: #2f6364;
-    overflow-y: auto;
-    height: calc(100% - 60px);
-    margin-top: 60px;
-    visibility: hidden;
   }
   #li {
     padding: 10px;
   }
   body {
     background-color: #fad7d7;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
   }
   .tarjeta {
     width: 95%;
@@ -406,10 +412,6 @@ article h1 {
     margin-left: 50px;
     margin-right: 20%;
     padding: 20px;
-  }
-  .tienda {
-    height: 100%;
-    padding: 100px;
   }
 }
 article {

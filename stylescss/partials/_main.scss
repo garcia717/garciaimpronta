@@ -30,7 +30,9 @@ div#editorial{
     flex-direction: column;
     height: 95.9%;
     align-items: center;
+    flex: flex-grow;
     img{
+        margin: 16px;
         border-radius: 200px;
     }
     p{
@@ -80,6 +82,26 @@ article h1{
     padding: map-get($map: $estilos, $key:paddingXl );
     h1{
         color: map-get($map: $estilos, $key:colorTitle );
+    }
+    form{
+        font-family: $headAndTitleF;
+        fieldset{
+            input{
+                border-radius: 8px;
+                width: 25%;
+                height: 34px;
+            }
+            label{
+                margin: 16px;
+            }
+            div{
+                textarea{
+                    border-radius: 8px;
+                    width: 25%;
+                    height: auto;
+                }
+            }
+        }
     }
 }
 .artsMain{
