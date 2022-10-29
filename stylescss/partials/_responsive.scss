@@ -1,9 +1,9 @@
 @media (max-width:768px){
     .btnSub{
         @extend %botonBase;
-        margin-top: 140px;
+    
     }
-
+    
     .principal{
         display: grid;
         grid-template-areas: 
@@ -45,10 +45,13 @@
     }
 .encabezado{
     background-color: #2f6364;
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
     }
 .logo{
     width: 150px;
@@ -116,13 +119,10 @@ footer ul{
     flex: auto;
 }
 .contacto{
-    height: max-content;
     width: 100%;
-    margin-top: 80px;
     margin-bottom: 80px;
     margin-left: 50px;
     margin-right: 20%;
-    padding: 20px;
 
 }
 }
@@ -147,7 +147,6 @@ article ol li{
     grid-template-columns: 1fr;
     width: 95%;
     grid-row-gap: 40px;
-    margin-top: 80px;
 }
 
 .tarjeta2{
@@ -178,7 +177,7 @@ article ol li{
     margin-right: 60px;
 }
 .artsMain{
-    margin-top: 125px;
+    margin-top: 0px;
     font-family: $headAndTitleF;
     time{
         background-color: $primaryColor;
@@ -201,6 +200,26 @@ article ol li{
     }
 }
 .contact{
-    margin-top: 100px;
+    margin-top: 0px;
+    form{
+        font-family: $headAndTitleF;
+        fieldset{
+            input{
+                border-radius: 8px;
+                width: 70%;
+                height: 34px;
+            }
+            label{
+                margin: 16px;
+            }
+            div{
+                textarea{
+                    border-radius: 8px;
+                    width: 70%;
+                    height: auto;
+                }
+            }
+        }
+    }
 }
 }

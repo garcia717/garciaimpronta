@@ -251,7 +251,7 @@ article h1 {
 }
 
 .contact {
-  margin: 20px;
+  margin: 20px 20px 20px 20px;
   border: 4px solid #2f6364;
   border-radius: 16px;
   padding: 15px;
@@ -300,9 +300,6 @@ article h1 {
 }
 
 @media (max-width: 768px) {
-  .btnSub {
-    margin-top: 140px;
-  }
   .principal {
     display: grid;
     grid-template-areas: "editorial" "articuloseccion1" "entrevista" "articuloseccion2" "articuloseccion3" "articuloseccion4";
@@ -335,10 +332,13 @@ article h1 {
   }
   .encabezado {
     background-color: #2f6364;
-    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
   }
   .logo {
     width: 150px;
@@ -403,15 +403,10 @@ article h1 {
     flex: auto;
   }
   .contacto {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
     width: 100%;
-    margin-top: 80px;
     margin-bottom: 80px;
     margin-left: 50px;
     margin-right: 20%;
-    padding: 20px;
   }
 }
 article {
@@ -436,7 +431,6 @@ article ol li {
     grid-template-columns: 1fr;
     width: 95%;
     grid-row-gap: 40px;
-    margin-top: 80px;
   }
   .tarjeta2 {
     width: 100%;
@@ -465,7 +459,7 @@ article ol li {
     margin-right: 60px;
   }
   .artsMain {
-    margin-top: 125px;
+    margin-top: 0px;
     font-family: raleway;
   }
   .artsMain time {
@@ -488,6 +482,22 @@ article ol li {
     margin-left: 60px;
   }
   .contact {
-    margin-top: 100px;
+    margin-top: 0px;
+  }
+  .contact form {
+    font-family: raleway;
+  }
+  .contact form fieldset input {
+    border-radius: 8px;
+    width: 70%;
+    height: 34px;
+  }
+  .contact form fieldset label {
+    margin: 16px;
+  }
+  .contact form fieldset div textarea {
+    border-radius: 8px;
+    width: 70%;
+    height: auto;
   }
 }/*# sourceMappingURL=styles.css.map */
