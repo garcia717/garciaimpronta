@@ -118,6 +118,7 @@ nav {
   display: inline;
   text-align: center;
   font-weight: bold;
+  margin-top: 16px;
 }
 .pieDePagina ul li {
   display: inline-flex;
@@ -154,10 +155,22 @@ body {
 
 div#articuloseccion1 {
   display: flex;
-  flex-direction: column;
   align-items: left;
   width: 100%;
   text-align: left;
+}
+div#articuloseccion1 h2 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+div#articuloseccion1 p {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+}
+div#articuloseccion1 a {
+  margin-left: 10px;
+  color: #2f6364;
 }
 
 div#editorial {
@@ -195,6 +208,7 @@ div#articuloseccion3 h1 {
   text-align: center;
   transition: 0.2s;
   background-color: #bca1a1;
+  font-family: raleway;
 }
 .tarjeta:hover {
   transform: translateY(-15px);
@@ -211,65 +225,29 @@ div#articuloseccion3 h1 {
   text-align: center;
   transition: 0.2s;
   background-color: false;
+  font-family: raleway;
 }
 .tarjeta2:hover {
   transform: translateY(-15px);
   box-shadow: 0 12 px 16px rgba(0, 0, 0, 0.2);
 }
-.tarjeta2 h1 {
-  font-size: x-small;
+.tarjeta2 img {
+  margin-bottom: 26px;
+}
+.tarjeta2 h2 {
+  font-family: raleway;
 }
 
 article h1 {
+  color: white;
   margin-top: 10px;
   border: #ceb0b0 groove 0.5px;
   border-radius: 8px;
-  padding: 1px;
-  -webkit-animation-name: eyeCatch;
-          animation-name: eyeCatch;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  padding: 16px;
+  font-family: gabriela;
+  font-weight: bold;
 }
 
-@-webkit-keyframes eyeCatch {
-  0% {
-    border: #115c35 solid;
-  }
-  25% {
-    border: #856e4a solid;
-  }
-  50% {
-    border: #5a4d4d solid;
-  }
-  75% {
-    border: #24115c solid;
-  }
-  100% {
-    border: #0be876 solid;
-  }
-}
-
-@keyframes eyeCatch {
-  0% {
-    border: #115c35 solid;
-  }
-  25% {
-    border: #856e4a solid;
-  }
-  50% {
-    border: #5a4d4d solid;
-  }
-  75% {
-    border: #24115c solid;
-  }
-  100% {
-    border: #0be876 solid;
-  }
-}
 .contact {
   margin: 20px;
   border: 4px solid #2f6364;

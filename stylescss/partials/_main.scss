@@ -8,10 +8,22 @@ body{
 }
 div#articuloseccion1{
     display: flex;
-    flex-direction: column;
     align-items: left;
     width: 100%;
     text-align: left;
+    h2{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+    a{
+        margin-left: 10px;       
+        color: $primaryColor; 
+    }
 }
 div#editorial{
     display: flex;
@@ -45,26 +57,21 @@ div#articuloseccion3{
 }
 .tarjeta2{
     @include cards($bgColor:false);
-    h1{
-        font-size: x-small;
+    img{
+        margin-bottom: 26px;
+    }
+    h2{
+        font-family: $headAndTitleF;
     }
 }
 article h1{
+    color: #ffffffff;
     margin-top: 10px;
     border: #ceb0b0 groove 0.5px;
     border-radius: 8px;
-    padding: 1px;
-    animation-name: eyeCatch;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-}
-@keyframes eyeCatch {
-    0% {border: #115c35 solid;}
-    25% {border: #856e4a solid;}
-    50% {border: #5a4d4d solid;}
-    75% {border: #24115c solid;}
-    100% {border: #0be876 solid;}
+    padding: 16px;
+    font-family: $bodyFont;
+    font-weight: bold;
 }
 .contact{
     margin: 20px;
