@@ -1,7 +1,6 @@
 @media (max-width:768px){
     .btnSub{
         @extend %botonBase;
-    
     }
     
     .principal{
@@ -24,6 +23,7 @@
     div#articuloseccion1{
         grid-area: articuloseccion1;
         flex-direction: column;
+
     }
     div#entrevista{
         grid-area: entrevista;
@@ -51,7 +51,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     }
 .logo{
     width: 150px;
@@ -66,18 +66,14 @@
 }
 #btn-color-picker {
     color: #2f6364;
-    background-color: #fad7d7;
-
-
 }
 
 #li{
     padding: 10px;
 }
 
-body{
-    background-color: #fad7d7;
-
+.principal{
+    margin-bottom: 10px;
 }
 .tarjeta{
     width: 95%;
@@ -162,7 +158,6 @@ article ol li{
     border-radius: 8px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin: 20px;
     text-align: center;
     transition: 0.2s;
     color: #000000;
@@ -207,13 +202,13 @@ article ol li{
     }
 }
 .contact{
-    margin-top: 0px;
+    margin-top: 20px;
     form{
         font-family: $headAndTitleF;
         fieldset{
             input{
                 border-radius: 8px;
-                width: 70%;
+                width: 100%;
                 height: 34px;
             }
             label{
@@ -222,7 +217,7 @@ article ol li{
             div{
                 textarea{
                     border-radius: 8px;
-                    width: 70%;
+                    width: 100%;
                     height: auto;
                 }
             }
