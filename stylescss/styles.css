@@ -351,6 +351,10 @@ article h1 {
     padding: 10%;
     background-color: #2f6364;
   }
+  #btn-color-picker {
+    color: #2f6364;
+    background-color: #fad7d7;
+  }
   #li {
     padding: 10px;
   }
@@ -408,24 +412,22 @@ article h1 {
     margin-left: 50px;
     margin-right: 20%;
   }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 98%;
+    align-self: center;
+    align-items: center;
+    padding: 20px 20px;
+    text-align: justify;
+  }
+  article ol li {
+    padding: 5px 5px;
+    margin-right: 500px;
+  }
 }
-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 98%;
-  align-self: center;
-  align-items: center;
-  padding: 20px 20px;
-  text-align: justify;
-}
-
-article ol li {
-  padding: 5px 5px;
-  margin-right: 500px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-width: 768px) {
   .secciones {
     display: grid;
     grid-template-columns: 1fr;

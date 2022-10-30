@@ -64,6 +64,13 @@
     padding: 10%;
     background-color: #2f6364;
 }
+#btn-color-picker {
+    color: #2f6364;
+    background-color: #fad7d7;
+
+
+}
+
 #li{
     padding: 10px;
 }
@@ -125,7 +132,7 @@ footer ul{
     margin-right: 20%;
 
 }
-}
+
 article{
     display: flex;
     flex-direction: column;
@@ -221,5 +228,6 @@ article ol li{
             }
         }
     }
+}
 }
 }
