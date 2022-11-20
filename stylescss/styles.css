@@ -192,7 +192,7 @@ div#editorial p {
 }
 div#editorial form button {
   font-size: larger;
-  width: 70%;
+  width: 40%;
 }
 
 div#entrevista {
@@ -205,11 +205,14 @@ div#entrevista img {
   margin: 16px;
   border-radius: 200px;
 }
+div#entrevista h2 {
+  align-self: start;
+}
 div#entrevista p {
   margin: 10px;
   text-align: justify;
 }
-div#entrevista a {
+div#entrevista p a {
   margin-left: 10px;
   color: #2f6364;
 }
@@ -276,27 +279,49 @@ div#articuloseccion4 img {
 
 .contact {
   margin: 20px 20px 20px 20px;
-  border: 4px solid #2f6364;
-  border-radius: 16px;
   padding: 15px;
+  display: flex;
+  flex-direction: row;
+  display: inline-flex;
 }
 .contact h1 {
   color: #1e7b7b;
 }
+.contact .aboutMe {
+  display: flexbox;
+  width: 50%;
+  text-align: justify;
+}
+.contact .aboutMe img {
+  border-radius: 400px;
+  float: right;
+  margin-left: 1em;
+}
 .contact form {
+  margin-left: 4rem;
+  border: 4px solid #2f6364;
+  border-radius: 16px;
   font-family: raleway;
+  width: 50%;
+  align-items: center;
+}
+.contact form fieldset {
+  align-self: center;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 .contact form fieldset input {
   border-radius: 8px;
-  width: 29%;
+  width: 80%;
   height: 34px;
+  margin-top: 2rem;
 }
 .contact form fieldset label {
   margin: 16px;
 }
 .contact form fieldset div textarea {
   border-radius: 8px;
-  width: 29%;
+  width: 80%;
   height: auto;
 }
 
@@ -527,15 +552,31 @@ article p {
     margin-left: 60px;
   }
   .contact {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
+  }
+  .contact .aboutMe {
+    width: 100%;
+  }
+  .contact .aboutMe img {
+    margin: 0 0 0 0;
+    float: none;
   }
   .contact form {
     font-family: raleway;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .contact form fieldset {
+    margin: 5px 5px 5px 5px;
   }
   .contact form fieldset input {
     border-radius: 8px;
-    width: 100%;
+    width: 50%;
     height: 34px;
+    margin: 5px 0 5px 5px;
+    align-self: center;
   }
   .contact form fieldset label {
     margin: 16px;

@@ -202,14 +202,28 @@ article ol li{
     }
 }
 .contact{
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
+    .aboutMe{
+        width: 100%;
+        img{
+            margin: 0 0 0 0;
+            float: none;
+        }
+    }
     form{
         font-family: $headAndTitleF;
+        width: 100%;
+        margin: 0 0 0 0;
         fieldset{
+            margin: 5px 5px 5px 5px;
             input{
                 border-radius: 8px;
-                width: 100%;
+                width: 50%;
                 height: 34px;
+                margin: 5px 0 5px 5px;
+                align-self: center;
             }
             label{
                 margin: 16px;
