@@ -29,6 +29,24 @@
   border-left: #bca1a1 4px groove;
 }
 
+.btnSocial {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.btnSocial a {
+  margin: 0.5em;
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-image: radial-gradient(closest-side, #7038b8, #76cd34, #bef63c);
+  color: #f1f1f1;
+  border-radius: 50%;
+}
+
 .principal {
   display: grid;
   grid-template-areas: "articuloseccion1 articuloseccion1 editorial" "entrevista articuloseccion2 editorial" "entrevista articuloseccion3 articuloseccion4";

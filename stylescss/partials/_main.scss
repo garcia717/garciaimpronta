@@ -94,6 +94,9 @@ div#articuloseccion4{
 .btnSub{
     @extend %botonBase;
 }
+.btnSocial{
+    @extend %botonSocial;
+}
 .tarjeta{
     @include cards($bgColor: #bca1a1)
 }
