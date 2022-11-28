@@ -123,6 +123,7 @@ div#articuloseccion4{
         display: flexbox;
         width: 50%;
         text-align: justify;
+        font-family: $headAndTitleF;
         img{
             border-radius: 400px;
             float: right;
@@ -207,3 +208,11 @@ article{
         text-align: justify;
      }
 } 
+.marquee{
+    display: flex;
+    font-family: $headAndTitleF;
+    font-weight: bold;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
